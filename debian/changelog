@@ -1,0 +1,170 @@
+node-rollup-plugin-json (4.1.0.repack-2) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Sat, 06 Nov 2021 16:15:08 +0100
+
+node-rollup-plugin-json (4.1.0.repack-1) experimental; urgency=medium
+
+  * Team upload
+  * Drop embedded legacy plugin component (Closes: #979157)
+  * New upstream version 4.1.0.repack
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 03 Jan 2021 22:21:28 +0530
+
+node-rollup-plugin-json (4.1.0+repack+~4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Drop legacy node-resolve plugin usage
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 30 Dec 2020 22:22:41 +0530
+
+node-rollup-plugin-json (4.1.0+repack+~4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Use dh-sequence-nodejs
+  * Use pkg-js-tools 0.9.41 auto test link
+  * Remove @rollup/wasm from import (Closes: #975362) and repack
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 21 Nov 2020 09:27:18 +0100
+
+node-rollup-plugin-json (4.1.0+~4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Enable legacy test during autopkgtest
+  * Add lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 24 Sep 2020 11:50:28 +0200
+
+node-rollup-plugin-json (4.1.0+~4.0.0-1) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Update homepage to https://github.com/rollup/plugins
+  * Update upstream name to @rollup/plugin-json
+  * Update d/watch: embed legacy rollup-plugin-json as component
+  * New upstream version 4.1.0+~4.0.0
+  * Refresh patches
+  * Update build
+  * Require node-rollup-pluginutils ≥ 3.0.8
+  * Build-depends on node-rollup-plugin-buble
+  * Add build dependency to node-rollup-plugin-node-resolve ≥ 9
+  * Enable upstream test using tape instead of ava
+  * Drop bad index.js link
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 18 Sep 2020 12:05:29 +0200
+
+node-rollup-plugin-json (4.0.0-7) unstable; urgency=medium
+
+  * Team Upload.
+
+  [ Nilesh Patra ]
+  * Update build deps in accordance with Babel7
+  * Fix with cme
+
+  [ Pirate Praveen ]
+  * Add back js.transpile.* build profiles
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 02 May 2020 12:03:27 +0530
+
+node-rollup-plugin-json (4.0.0-6) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Fix one test for node-rollup-pluginutils ≥ 2.8
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 21 Mar 2020 08:36:16 +0100
+
+node-rollup-plugin-json (4.0.0-5) unstable; urgency=medium
+
+  * Do not transpile
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 24 Feb 2020 00:23:19 +0100
+
+node-rollup-plugin-json (4.0.0-4) unstable; urgency=medium
+
+  * Compile with newer rollup and use babel for transpiling
+    (avoid buble loop)
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 22 Feb 2020 02:07:16 +0100
+
+node-rollup-plugin-json (4.0.0-3) unstable; urgency=medium
+
+  * Team upload
+  * Add node-rollup-plugin-buble as build dependency (rollup dropped this
+    dependency from 0.56.3-1)
+  * Bump Standards-Version to 4.4.1 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 02 Oct 2019 16:21:39 +0530
+
+node-rollup-plugin-json (4.0.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Switch install to pkg-js-tools
+  * Enable upstream test except the last one
+  * Drop unneeded version constraints from (build) dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Wed, 07 Aug 2019 20:33:35 +0200
+
+node-rollup-plugin-json (4.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.4.0.
+  * Fix Vcs-Git url.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 09 Jul 2019 09:19:16 +0200
+
+node-rollup-plugin-json (3.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.2.1.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 22 Sep 2018 23:21:03 +0200
+
+node-rollup-plugin-json (3.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Refresh packaging:
+    - Use my debian.org mail address.
+    - Point Vcs-* fields to salsa.
+    - Bump std-ver to 4.1.4.
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 20 Jun 2018 02:22:04 +0200
+
+node-rollup-plugin-json (2.3.0-3) unstable; urgency=medium
+
+  * Use rollup -- like upstream!
+  * Refresh packaging:
+    - Bump dh compat to 11.
+    - Refresh d/copyright.
+    - Move to section javascript.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 25 Feb 2018 09:05:38 +0100
+
+node-rollup-plugin-json (2.3.0-2) unstable; urgency=medium
+
+  * Improve exports.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 08 Sep 2017 06:54:58 +0200
+
+node-rollup-plugin-json (2.3.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #867334)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Wed, 05 Jul 2017 23:08:17 +0200

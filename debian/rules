@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+ifneq ($(filter pkg.node-rollup-plugin-json.transpilebabel,$(DEB_BUILD_PROFILES)),)
+TRANSPILE_PROF?=babel7
+BABEL_PRESET?=env
+export BABEL_PRESET
+else ifneq ($(filter pkg.node-rollup-plugin-json.transpilebuble,$(DEB_BUILD_PROFILES)),)
+TRANSPILE_PROF?=buble
+else ifneq ($(filter pkg.node-rollup-plugin-json.transpilenone,$(DEB_BUILD_PROFILES)),)
+TRANSPILE_PROF?=none
+else
+TRANSPILE_PROF?=none
+endif
+TRANSPILE?=$(TRANSPILE_PROF)
+export TRANSPILE
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	# Build @rollup/plugin-json
+	cd packages/json && rollup -c
+
+override_dh_fixperms:
+	dh_fixperms
+	cd debian/node-rollup-plugin-json && \
+	chmod -x usr/share/nodejs/@rollup/plugin-json/package.json \
+		usr/share/nodejs/@rollup/plugin-json/types/index.d.ts

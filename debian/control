@@ -1,0 +1,36 @@
+Source: node-rollup-plugin-json
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Julien Puydt <jpuydt@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , mocha <!nocheck>
+ , node-rollup-plugin-babel (>= 4.4~) <!pkg.node-rollup-plugin-json.transpilebuble>
+ , node-rollup-plugin-buble (>= 0.19.8~) <!pkg.node-rollup-plugin-json.transpilebabel>
+ , node-rollup-plugin-node-resolve (>= 9)
+ , node-rollup-pluginutils
+ , node-rollup-pluginutils (>= 3.0.8) <!nocheck>
+ , node-source-map-support <!nocheck>
+ , node-tape <!nocheck>
+ , nodejs (>= 10)
+ , dh-sequence-nodejs
+ , rollup (>= 0.68.2+ds)
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-rollup-plugin-json
+Vcs-Git: https://salsa.debian.org/js-team/node-rollup-plugin-json.git
+Homepage: https://github.com/rollup/plugins
+Rules-Requires-Root: no
+
+Package: node-rollup-plugin-json
+Architecture: all
+Depends: ${misc:Depends}
+ , node-rollup-pluginutils (>= 3.0.8)
+Recommends: rollup
+Enhances: rollup
+Breaks: rollup (<< 0.68.2+ds~)
+Description: rollup plugin to convert JSON files to ES6 modules
+ This rollup plugin provides functions to convert JSON files
+ to ECMAScript version 6 modules.
+ .
+ Node.js is an event-based server-side JavaScript engine.
