@@ -2,8 +2,8 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: @rollup/plugin-json
 Upstream-Contact: https://github.com/rollup/plugins/issues
 Source: https://github.com/rollup/plugins
-Files-Excluded: *
-Files-Included: packages/json shared util tsconfig.base.json
+Files-Excluded: packages/*
+Files-Included: packages/json
 
 Files: *
 Copyright: 2017-2018 Rich Harris

@@ -26,3 +26,6 @@ override_dh_fixperms:
 	cd debian/node-rollup-plugin-json && \
 	chmod -x usr/share/nodejs/@rollup/plugin-json/package.json \
 		usr/share/nodejs/@rollup/plugin-json/types/index.d.ts
+
+override_dh_installchangelogs:
+	dh_installchangelogs packages/json/CHANGELOG.md

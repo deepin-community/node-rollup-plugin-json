@@ -5,18 +5,17 @@ Section: javascript
 Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , mocha <!nocheck>
  , node-rollup-plugin-babel (>= 4.4~) <!pkg.node-rollup-plugin-json.transpilebuble>
- , node-rollup-plugin-buble (>= 0.19.8~) <!pkg.node-rollup-plugin-json.transpilebabel>
- , node-rollup-plugin-node-resolve (>= 9)
- , node-rollup-pluginutils
- , node-rollup-pluginutils (>= 3.0.8) <!nocheck>
+ , node-rollup-plugin-buble (>= 0.21.0~) <!pkg.node-rollup-plugin-json.transpilebabel>
+ , node-rollup-plugin-node-resolve (>= 14.1.0~)
+ , node-rollup-pluginutils (>= 4.2.1~) <!nocheck>
+ , node-rollup-plugin-typescript
  , node-source-map-support <!nocheck>
  , node-tape <!nocheck>
- , nodejs (>= 10)
- , dh-sequence-nodejs
  , rollup (>= 0.68.2+ds)
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/js-team/node-rollup-plugin-json
 Vcs-Git: https://salsa.debian.org/js-team/node-rollup-plugin-json.git
 Homepage: https://github.com/rollup/plugins
@@ -25,7 +24,7 @@ Rules-Requires-Root: no
 Package: node-rollup-plugin-json
 Architecture: all
 Depends: ${misc:Depends}
- , node-rollup-pluginutils (>= 3.0.8)
+ , node-rollup-pluginutils (>= 4.2.1~)
 Recommends: rollup
 Enhances: rollup
 Breaks: rollup (<< 0.68.2+ds~)
