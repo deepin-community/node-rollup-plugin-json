@@ -8,11 +8,11 @@ export default function json(options = {}) {
     name: 'json',
 
     // eslint-disable-next-line no-shadow
-    transform(json, id) {
+    transform(code, id) {
       if (id.slice(-5) !== '.json' || !filter(id)) return null;
 
       try {
-        const parsed = JSON.parse(json);
+        const parsed = JSON.parse(code);
         return {
           code: dataToEsm(parsed, {
             preferConst: options.preferConst,
@@ -24,8 +24,7 @@ export default function json(options = {}) {
         };
       } catch (err) {
         const message = 'Could not parse JSON file';
-        const position = parseInt(/[\d]/.exec(err.message)[0], 10);
-        this.warn({ message, id, position });
+        this.error({ message, id, cause: err });
         return null;
       }
     }

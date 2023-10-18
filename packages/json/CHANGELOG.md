@@ -1,5 +1,41 @@
 # @rollup/plugin-json ChangeLog
 
+## v6.0.0
+
+_2022-12-17_
+
+### Breaking Changes
+
+- fix: log more robustly when JSON parsing fails [#1361](https://github.com/rollup/plugins/pull/1361)
+
+## v5.0.2
+
+_2022-11-27_
+
+### Updates
+
+- docs: correct minimatch to picomatch [#1332](https://github.com/rollup/plugins/pull/1332)
+
+## v5.0.1
+
+_2022-10-21_
+
+### Updates
+
+- chore: update rollup dependencies ([3038271](https://github.com/rollup/plugins/commit/303827191ede6b2e4eade96c6968ed16a587683f))
+
+## v5.0.0
+
+_2022-10-10_
+
+### Breaking Changes
+
+- fix: prepare for Rollup 3 [#1291](https://github.com/rollup/plugins/pull/1291)
+
+### Updates
+
+- chore: update dependencies ([678125b](https://github.com/rollup/plugins/commit/678125b5396bd3e8193c39d7d90e33d3f76cf7d8))
+
 ## v4.1.0
 
 _2020-06-05_

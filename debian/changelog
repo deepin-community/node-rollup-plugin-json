@@ -1,3 +1,38 @@
+node-rollup-plugin-json (6.0.0+ds1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Sun, 16 Jul 2023 09:20:17 +0400
+
+node-rollup-plugin-json (6.0.0+ds1-1) experimental; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * New upstream version 6.0.0+ds1
+  * Update test patch
+
+ -- Yadd <yadd@debian.org>  Tue, 10 Jan 2023 13:16:31 +0400
+
+node-rollup-plugin-json (5.0.1+ds1-1) unstable; urgency=medium
+
+  * Team upload
+  * Install the right changelog
+  * New upstream version 5.0.1+ds1
+
+ -- Yadd <yadd@debian.org>  Sun, 20 Nov 2022 07:31:28 +0100
+
+node-rollup-plugin-json (5.0.0+ds1-1) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.1, no changes needed.
+  * New upstream version 5.0.0+ds1
+  * Build with @rollup/plugin-typescript
+  * Refresh test
+  * Update minimal versions
+
+ -- Yadd <yadd@debian.org>  Wed, 12 Oct 2022 18:27:33 +0200
+
 node-rollup-plugin-json (4.1.0.repack-2) unstable; urgency=medium
 
   * Team upload
